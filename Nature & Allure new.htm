@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nature &amp; Allure</title>
+<meta name="description" content="Discover AGOR hair, face and body care products and beauty services in Kenya.">
+<link rel="icon" href="http://127.0.0.1:5500/nature-favicon.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./Nature &amp; Allure new_files/css2" rel="stylesheet">
+
+<style>
+:root{--black:#111710;--green:#18351f;--gold:#c6a15b;--cream:#f8f4e9;--white:#fff;--muted:#77786f}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--black)}
+button,input,select,textarea{font:inherit}
+button,a{-webkit-tap-highlight-color:transparent}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+.topbar{background:var(--green);color:white;padding:10px;text-align:center;font-size:11px;letter-spacing:2px}
+header{background:var(--black);color:white;position:sticky;top:0;z-index:50;border-bottom:1px solid #393c31}
+.nav{max-width:1250px;margin:auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;min-width:0}
+.logo img{width:75px;height:75px;object-fit:contain;display:block}
+.logo-text{font-family:'Playfair Display',serif;font-size:19px;color:var(--gold);letter-spacing:1px}
+.logo-text small{display:block;font-family:'DM Sans',sans-serif;font-size:8px;color:#e8dfc9;letter-spacing:2px;margin-top:4px}
+.navlinks{display:flex;align-items:center;gap:23px;font-size:12px}
+.navlinks a:hover{color:var(--gold)}
+.nav-actions{display:flex;gap:15px;align-items:center}
+.nav-actions button,.menu-btn{background:none;color:white;border:0;cursor:pointer;font-size:13px}
+.menu-btn{display:none;font-size:25px}
+.hero{min-height:620px;display:flex;align-items:center;color:white;background:linear-gradient(90deg,rgba(9,17,10,.94),rgba(9,17,10,.68),rgba(9,17,10,.15)),url('allureback.jpeg') center/cover}
+.hero-inner{max-width:1250px;width:100%;margin:auto;padding:80px 24px}
+.eyebrow{color:var(--gold);letter-spacing:4px;text-transform:uppercase;font-size:11px;font-weight:700}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(45px,7vw,82px);line-height:1.08;max-width:720px;margin:22px 0;font-weight:500}
+.hero p{max-width:490px;line-height:1.9;color:#e6e6de;font-size:14px}
+.btn{display:inline-block;background:var(--gold);color:#171710;padding:14px 23px;border:0;cursor:pointer;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;transition:.2s}
+.btn:hover{background:#e0bd79;transform:translateY(-2px)}
+.btn-dark{background:var(--green);color:white}
+.btn-outline{border:1px solid var(--gold);color:var(--gold);background:transparent}
+.hero .btn{margin-top:30px}
+.trust{display:grid;grid-template-columns:repeat(4,1fr);background:white;padding:27px max(24px,calc((100% - 1200px)/2));gap:20px;text-align:center}
+.trust div{font-size:12px;color:#4d5148}
+.trust strong{display:block;color:var(--green);font-size:12px;margin-bottom:6px}
+section{padding:80px 24px}
+.section-inner{max-width:1200px;margin:auto}
+.section-heading{text-align:center;margin-bottom:40px}
+.section-heading .eyebrow{color:#9d793d}
+.section-heading h2{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,47px);font-weight:500;margin:12px 0}
+.section-heading p{color:var(--muted);font-size:13px;line-height:1.8}
+.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.category-card{height:300px;position:relative;overflow:hidden;background:#ded8c8}
+.category-card img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.category-card:hover img{transform:scale(1.07)}
+.category-card:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.82),transparent 70%)}
+.category-card div{position:absolute;z-index:2;bottom:22px;left:18px;color:white}
+.category-card h3{font-family:'Playfair Display',serif;font-size:24px;margin-bottom:8px}
+.category-card span{font-size:10px;color:#e7c98c;letter-spacing:1px}
+.shop-section{background:white}
+.shop-tools{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:25px}
+.search{padding:12px 15px;border:1px solid #ddd;background:white;min-width:230px;outline:none}
+.search:focus,.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold)}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filter-btn{border:1px solid #ddd;background:white;padding:11px 14px;font-size:10px;cursor:pointer}
+.filter-btn.active,.filter-btn:hover{background:var(--green);color:white;border-color:var(--green)}
+.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.product-card{background:var(--cream);border:1px solid #eee9de;overflow:hidden;transition:.25s;cursor:pointer}
+.product-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px #00000012}
+.product-image{height:235px;background:#eee8da;overflow:hidden}
+.product-image img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.product-card:hover .product-image img{transform:scale(1.05)}
+.product-info{padding:17px}
+.product-category{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#96733b}
+.product-info h3{font-family:'Playfair Display',serif;font-size:16px;line-height:1.5;margin:8px 0}
+.product-info p{font-size:11px;color:var(--muted);line-height:1.7;min-height:37px}
+.product-price{font-size:14px;font-weight:700;margin:12px 0;color:var(--green)}
+.product-info button{width:100%;padding:12px 8px;background:var(--green);color:white;border:0;cursor:pointer;font-size:10px;letter-spacing:.6px;text-transform:uppercase}
+.product-info button:hover{background:var(--gold);color:#111}
+.empty{padding:35px;text-align:center;color:var(--muted);grid-column:1/-1}
+.product-modal{display:none;position:fixed;inset:0;z-index:120;background:rgba(0,0,0,.72);padding:24px;align-items:center;justify-content:center}
+.product-modal.show{display:flex}
+.product-modal-dialog{position:relative;width:min(900px,100%);max-height:calc(100vh - 48px);overflow-y:auto;background:var(--cream);display:grid;grid-template-columns:1fr 1fr;box-shadow:0 24px 70px #0006}
+.product-modal-image{min-height:420px;background:#eee8da}
+.product-modal-image img{width:100%;height:100%;min-height:420px;object-fit:contain;display:block}
+.product-modal-content{padding:42px 34px;display:flex;flex-direction:column;justify-content:center}
+.product-modal-close{position:absolute;top:12px;right:14px;width:40px;height:40px;border:0;border-radius:50%;background:white;color:#111;font-size:27px;line-height:1;cursor:pointer;z-index:2}
+.product-modal-category{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#96733b;margin-bottom:12px}
+.product-modal-content h2{font-family:'Playfair Display',serif;font-size:clamp(25px,3vw,36px);line-height:1.25;margin-bottom:14px}
+.product-modal-price{font-size:21px;font-weight:700;color:var(--green);margin:8px 0 18px}
+.product-modal-description{font-size:13px;line-height:1.9;color:#62645c}
+.product-modal-note{font-size:11px;line-height:1.7;color:var(--muted);margin-top:16px}
+.product-modal-quantity{display:flex;align-items:center;gap:14px;margin:24px 0}
+.product-modal-quantity button{width:36px;height:36px;border:1px solid #d8d2c5;background:white;cursor:pointer;font-size:18px}
+.product-modal-quantity span{min-width:20px;text-align:center;font-weight:700}
+.product-modal-add{width:100%;padding:15px;background:var(--green);color:white;border:0;cursor:pointer;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+.product-modal-add:hover{background:var(--gold);color:#111}
+.about{background:var(--green);color:white}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-image{min-height:430px}
+.about-image img{width:100%;height:430px;object-fit:cover}
+.about-copy h2{font-family:'Playfair Display',serif;font-size:46px;font-weight:400;margin:15px 0}
+.about-copy p{color:#d0d4cc;line-height:1.9;font-size:13px;margin-bottom:18px}
+.services{background:#f1ede4}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.service-card{background:white}
+.service-card img{width:100%;height:240px;object-fit:cover}
+.service-card div{padding:22px}
+.service-card h3{font-family:'Playfair Display',serif;font-size:23px;margin-bottom:10px}
+.service-card p{color:var(--muted);font-size:12px;line-height:1.8;min-height:65px}
+.service-card button{margin-top:18px}
+.booking{background:white}
+.booking-wrap{max-width:760px;margin:auto;background:var(--cream);padding:35px}
+.booking-wrap h3{font-family:'Playfair Display',serif;font-size:29px;margin-bottom:10px}
+.booking-wrap>p{font-size:12px;color:var(--muted);margin-bottom:25px;line-height:1.8}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.form-group{display:flex;flex-direction:column;gap:7px}
+.form-group.full{grid-column:1/-1}
+.form-group label{font-size:11px;font-weight:700}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:13px;border:1px solid #ddd;background:white;outline:none;border-radius:0}
+.form-group textarea{min-height:100px;resize:vertical}
+.form-submit{margin-top:20px;width:100%}
+.contact{background:var(--black);color:white}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.contact h2{font-family:'Playfair Display',serif;font-size:40px;font-weight:400;margin:15px 0}
+.contact p{color:#c6c8c0;line-height:1.9;font-size:13px}
+.contact a:not(.btn){color:var(--gold)}
+.location-card{margin-top:22px;padding:20px;background:#1b2119;border:1px solid #5b5038}
+.location-card h3{font-family:'Playfair Display',serif;font-size:23px;color:var(--gold);margin-bottom:10px}
+.location-card p{margin-bottom:12px}
+.location-map{width:100%;height:260px;border:0;display:block;margin-top:16px}
+.location-directions{display:inline-block;margin-top:8px;color:var(--gold);text-decoration:underline;font-size:12px}
+footer{background:#090b08;color:#aaa;padding:30px 20px;text-align:center;font-size:11px}
+footer .logo{justify-content:center;margin-bottom:15px}
+footer p{margin-top:10px}
+.whatsapp{position:fixed;bottom:20px;right:20px;z-index:80;background:#20b85a;color:white;padding:14px 18px;border-radius:40px;font-weight:700;font-size:12px;box-shadow:0 5px 20px #0003}
+.overlay{display:none;position:fixed;inset:0;background:#0008;z-index:90}
+.overlay.show{display:block}
+.cart-panel{position:fixed;right:-480px;top:0;height:100vh;width:min(460px,100%);background:white;z-index:100;padding:24px;box-shadow:-10px 0 35px #0002;transition:right .3s;overflow-y:auto}
+.cart-panel.open{right:0}
+.cart-head{display:flex;justify-content:space-between;align-items:center;padding-bottom:18px;border-bottom:1px solid #eee;margin-bottom:10px}
+.cart-head h2{font-family:'Playfair Display',serif;font-size:25px}
+.cart-head button{border:0;background:none;font-size:28px;cursor:pointer}
+.cart-item{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:17px 0;border-bottom:1px solid #eee}
+.cart-product-name{font-family:'Playfair Display',serif;font-size:14px;line-height:1.5}
+.cart-product-category{display:block;color:#96733b;font-size:9px;letter-spacing:1px;margin-top:4px;text-transform:uppercase}
+.quantity-controls{display:flex;align-items:center;gap:12px;margin-top:10px}
+.quantity-controls button{width:31px;height:31px;border:1px solid #ddd;background:white;cursor:pointer}
+.quantity-controls button:hover{background:var(--green);color:white}
+.cart-remove{border:0;background:none;color:#a44;font-size:10px;cursor:pointer;margin-top:9px}
+.cart-summary{margin-top:22px}
+.cart-summary p{font-size:11px;color:var(--muted);line-height:1.8;margin-bottom:15px}
+.cart-total{font-weight:700;margin:20px 0 10px;color:var(--green)}
+.cart-summary .btn{width:100%;text-align:center}
+.cart-clear{width:100%;padding:12px;margin-top:10px;background:white;border:1px solid #ddd;cursor:pointer;font-size:10px;text-transform:uppercase;letter-spacing:1px}
+.cart-clear:hover{background:var(--cream)}
+.cart-empty{text-align:center;padding:40px 10px}
+.cart-empty h3{font-family:'Playfair Display',serif;font-size:24px;margin-bottom:10px}
+.cart-empty p{font-size:12px;color:var(--muted);line-height:1.8}
+.price-note{text-align:center;font-size:11px;color:#777;margin-top:15px}
+
+@media(max-width:950px){
+.product-grid{grid-template-columns:repeat(3,1fr)}
+.categories{grid-template-columns:repeat(2,1fr)}
+.navlinks{gap:12px}
+.nav{gap:12px}
+}
+
+@media(max-width:650px){
+.product-modal{padding:12px}
+.product-modal-dialog{grid-template-columns:1fr;max-height:calc(100vh - 24px)}
+.product-modal-image,.product-modal-image img{min-height:0;height:260px}
+.product-modal-content{padding:25px 20px}
+.product-modal-content h2{font-size:25px;padding-right:28px}
+.nav{padding:10px 14px}
+.logo img{width:43px;height:43px;border-radius:50%}
+.logo-text{font-size:15px}
+.logo-text small{font-size:7px}
+.menu-btn{display:block}
+.navlinks{display:none;position:absolute;top:100%;left:0;right:0;background:var(--black);padding:24px;flex-direction:column;align-items:flex-start;gap:22px}
+.navlinks.show{display:flex}
+.nav-actions{gap:10px}
+.nav-actions button{font-size:11px}
+.hero{min-height:510px}
+.hero-inner{padding:60px 20px}
+.trust{grid-template-columns:repeat(2,1fr);padding:24px 15px}
+section{padding:60px 16px}
+.categories{gap:10px}
+.category-card{height:210px}
+.category-card h3{font-size:18px}
+.category-card div{left:12px;bottom:15px}
+.category-card span{font-size:8px}
+.shop-tools{flex-direction:column}
+.search{width:100%;min-width:0}
+.filters{gap:6px}
+.filter-btn{padding:10px;font-size:9px}
+.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.product-image{height:170px}
+.product-info{padding:11px}
+.product-info h3{font-size:13px}
+.product-info p{font-size:10px}
+.product-info button{font-size:9px;padding:11px 5px}
+.about-grid,.contact-grid{grid-template-columns:1fr;gap:27px}
+.about-image,.about-image img{min-height:280px;height:280px}
+.about-copy h2,.contact h2{font-size:34px}
+.service-grid{grid-template-columns:1fr}
+.service-card img{height:240px}
+.form-grid{grid-template-columns:1fr}
+.form-group.full{grid-column:auto}
+.booking-wrap{padding:20px}
+.whatsapp{right:12px;bottom:12px}
+.cart-panel{padding:20px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">NATURE &amp; ALLURE · BEAUTY · CARE · ELEGANCE</div>
+
+<header>
+<nav class="nav">
+<a href="http://127.0.0.1:5500/index.html#home" class="logo">
+<img src="./Nature &amp; Allure new_files/allureback.jpeg" alt="Nature and Allure beauty logo">
+<span class="logo-text">NATURE &amp; ALLURE<small>BEAUTY · CARE · ELEGANCE</small></span>
+</a>
+<button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+<div class="navlinks" id="navlinks">
+<a href="http://127.0.0.1:5500/index.html#home" onclick="toggleMenu()">Home</a>
+<a href="http://127.0.0.1:5500/index.html#shop" onclick="toggleMenu()">Shop</a>
+<a href="http://127.0.0.1:5500/index.html#services" onclick="toggleMenu()">Services</a>
+<a href="http://127.0.0.1:5500/index.html#about" onclick="toggleMenu()">About</a>
+<a href="http://127.0.0.1:5500/index.html#contact" onclick="toggleMenu()">Contact</a>
+</div>
+<div class="nav-actions">
+<button onclick="focusSearch()" aria-label="Search products">⌕</button>
+<button onclick="openCart()">Bag (<span id="cart-count">2</span>)</button>
+</div>
+</nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+<div class="hero-inner">
+<div class="eyebrow">Welcome to Nature &amp; Allure</div>
+<h1>Natural Beauty.<br>Elegant You.</h1>
+<p>Discover beauty and personal care essentials inspired by nature. Explore AGOR hair, face and body care, professional beauty services and products selected for your daily routine.</p>
+<a href="http://127.0.0.1:5500/index.html#shop" class="btn">Explore the collection →</a>
+</div>
+</section>
+
+<div class="trust">
+<div><strong>01 / HAIR</strong>Hair care essentials</div>
+<div><strong>02 / FACE</strong>Everyday skincare</div>
+<div><strong>03 / BODY</strong>Body care essentials</div>
+<div><strong>04 / BEAUTY</strong>Professional services</div>
+</div>
+
+<section>
+<div class="section-inner">
+<div class="section-heading">
+<div class="eyebrow">Discover our collections</div>
+<h2>Beauty, Your Way</h2>
+<p>Explore our beauty categories and discover your favourites.</p>
+</div>
+<div class="categories">
+<a class="category-card" href="http://127.0.0.1:5500/index.html#shop" onclick="setCategory('Hair Care')">
+<img loading="lazy" src="./Nature &amp; Allure new_files/haircarelogo.jpeg" alt="Hair care collection">
+<div><h3>Hair Care</h3><span>EXPLORE COLLECTION →</span></div>
+</a>
+<a class="category-card" href="http://127.0.0.1:5500/index.html#shop" onclick="setCategory('Body Care')">
+<img loading="lazy" src="./Nature &amp; Allure new_files/bodycarelogo.jpeg" alt="Body care collection">
+<div><h3>Body Care</h3><span>EXPLORE COLLECTION →</span></div>
+</a>
+<a class="category-card" href="http://127.0.0.1:5500/index.html#shop" onclick="setCategory('Skin Care')">
+<img loading="lazy" src="./Nature &amp; Allure new_files/facecarelogo.jpeg" alt="Skincare collection">
+<div><h3>Face Care</h3><span>EXPLORE COLLECTION →</span></div>
+</a>
+<a class="category-card" href="http://127.0.0.1:5500/index.html#services">
+<img loading="lazy" src="./Nature &amp; Allure new_files/makeuplogo.jpeg" alt="Professional makeup services">
+<div><h3>Makeup &amp; Beauty</h3><span>DISCOVER SERVICES →</span></div>
+</a>
+</div>
+</div>
+</section>
+
+<section class="shop-section" id="shop">
+<div class="section-inner">
+<div class="section-heading">
+<div class="eyebrow">The AGOR collection</div>
+<h2>Shop Our Products</h2>
+<p>Browse our catalogue. All product prices are listed directly in Kenyan Shillings (KSh).</p>
+</div>
+<div class="shop-tools">
+<input class="search" id="search" type="search" placeholder="Search products..." oninput="renderProducts()" aria-label="Search products">
+<div class="filters">
+<button class="filter-btn active" onclick="setCategory('All')">All</button>
+<button class="filter-btn" onclick="setCategory('Hair Care')">Hair Care</button>
+<button class="filter-btn" onclick="setCategory('Skin Care')">Skin Care</button>
+<button class="filter-btn" onclick="setCategory('Body Care')">Body Care</button>
+<button class="filter-btn" onclick="setCategory('Combo Deals')">Combo Deals</button>
+</div>
+</div>
+<div class="product-grid" id="product-grid"><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor 100% Organic Hair Oil (250ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/agorhairoil.jpeg" alt="Agor 100% Organic Hair Oil (250ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Hair Care</div><h3>Agor 100% Organic Hair Oil (250ml)</h3><p>Organic hair oil for your hair care routine.</p><div class="product-price">KSh 2,500</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Hair Shampoo (500ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/organicshampoo.jpeg" alt="Agor Organic Hair Shampoo (500ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Hair Care</div><h3>Agor Organic Hair Shampoo (500ml)</h3><p>Hair cleansing essential.</p><div class="product-price">KSh 2,922</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Hair Conditioner (500ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/organicconditioner.jpeg" alt="Agor Organic Hair Conditioner (500ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Hair Care</div><h3>Agor Organic Hair Conditioner (500ml)</h3><p>Conditioning care for your hair.</p><div class="product-price">KSh 2,922</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Leave-In Conditioner (430g)"><div class="product-image"><img src="./Nature &amp; Allure new_files/leaveinconditioner.jpeg" alt="Agor Organic Leave-In Conditioner (430g)" loading="lazy"></div><div class="product-info"><div class="product-category">Hair Care</div><h3>Agor Organic Leave-In Conditioner (430g)</h3><p>Leave-in hair care.</p><div class="product-price">KSh 2,794</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Deep Treatment Cocktail Hair Mask (430g)"><div class="product-image"><img src="./Nature &amp; Allure new_files/coctail430.jpeg" alt="Agor Organic Deep Treatment Cocktail Hair Mask (430g)" loading="lazy"></div><div class="product-info"><div class="product-category">Hair Care</div><h3>Agor Organic Deep Treatment Cocktail Hair Mask (430g)</h3><p>A deep treatment hair mask.</p><div class="product-price">KSh 2,818</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Curling Custard (300ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/curlingcustard300.jpeg" alt="Agor Organic Curling Custard (300ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Hair Care</div><h3>Agor Organic Curling Custard (300ml)</h3><p>Styling care for curls.</p><div class="product-price">KSh 2,600</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Flaxseed Styling Gel (300ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/flaxseed300.jpeg" alt="Agor Organic Flaxseed Styling Gel (300ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Hair Care</div><h3>Agor Organic Flaxseed Styling Gel (300ml)</h3><p>Hair styling gel.</p><div class="product-price">KSh 2,500</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Black Jamaican Castor Oil (250ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/blackjamaican250.jpeg" alt="Agor Organic Black Jamaican Castor Oil (250ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Hair Care</div><h3>Agor Organic Black Jamaican Castor Oil (250ml)</h3><p>Black Jamaican castor oil.</p><div class="product-price">KSh 2,500</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Rosemary Oil For Hair &amp; Skin (250ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/rosemaryoil250.jpeg" alt="Agor Organic Rosemary Oil For Hair &amp; Skin (250ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Hair Care</div><h3>Agor Organic Rosemary Oil For Hair &amp; Skin (250ml)</h3><p>Rosemary oil for hair and skin.</p><div class="product-price">KSh 2,673</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Hyaluronic Smoothing Cleanser (100ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/clenser100.jpeg" alt="Agor Hyaluronic Smoothing Cleanser (100ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Skin Care</div><h3>Agor Hyaluronic Smoothing Cleanser (100ml)</h3><p>Facial cleansing essential.</p><div class="product-price">KSh 3,100</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Vitamin C Brightening Serum (50ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/brighteningserum50.jpeg" alt="Agor Vitamin C Brightening Serum (50ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Skin Care</div><h3>Agor Vitamin C Brightening Serum (50ml)</h3><p>Vitamin C facial serum.</p><div class="product-price">KSh 3,500</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Day &amp; Night Deep Moisturising Cream (50ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/dayandnight50.jpeg" alt="Agor Day &amp; Night Deep Moisturising Cream (50ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Skin Care</div><h3>Agor Day &amp; Night Deep Moisturising Cream (50ml)</h3><p>Daily moisturising cream.</p><div class="product-price">KSh 2,500</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor SPF 50+ Sun Cream (50ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/suncream50.jpeg" alt="Agor SPF 50+ Sun Cream (50ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Skin Care</div><h3>Agor SPF 50+ Sun Cream (50ml)</h3><p>Sun protection cream.</p><div class="product-price">KSh 3,200</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Retinol Serum (50ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/retinalserum50.jpeg" alt="Agor Retinol Serum (50ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Skin Care</div><h3>Agor Retinol Serum (50ml)</h3><p>Retinol facial serum.</p><div class="product-price">KSh 3,500</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Natural Dead Sea Mud Mask (250g)"><div class="product-image"><img src="./Nature &amp; Allure new_files/mudmask.jpeg" alt="Agor Natural Dead Sea Mud Mask (250g)" loading="lazy"></div><div class="product-info"><div class="product-category">Skin Care</div><h3>Agor Natural Dead Sea Mud Mask (250g)</h3><p>Dead Sea mud mask.</p><div class="product-price">KSh 2,500</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Charcoal Peel-Off Black Mask (60ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/chacoalpeel.jpeg" alt="Agor Charcoal Peel-Off Black Mask (60ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Skin Care</div><h3>Agor Charcoal Peel-Off Black Mask (60ml)</h3><p>Charcoal facial mask.</p><div class="product-price">KSh 2,100</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Shea Butter Body Hand &amp; Feet Scrub (300g)"><div class="product-image"><img src="./Nature &amp; Allure new_files/sheabutter.jpeg" alt="Agor Shea Butter Body Hand &amp; Feet Scrub (300g)" loading="lazy"></div><div class="product-info"><div class="product-category">Body Care</div><h3>Agor Shea Butter Body Hand &amp; Feet Scrub (300g)</h3><p>Shea butter scrub for body, hands and feet.</p><div class="product-price">KSh 1,564</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Coffee &amp; Cocoa Body Oil (250ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/cocoabodyoil.jpeg" alt="Agor Organic Coffee &amp; Cocoa Body Oil (250ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Body Care</div><h3>Agor Organic Coffee &amp; Cocoa Body Oil (250ml)</h3><p>Coffee and cocoa body oil.</p><div class="product-price">KSh 2,863</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Coffee &amp; Cocoa Body Butter (300g)"><div class="product-image"><img src="./Nature &amp; Allure new_files/cocoabodybutter.jpeg" alt="Agor Organic Coffee &amp; Cocoa Body Butter (300g)" loading="lazy"></div><div class="product-info"><div class="product-category">Body Care</div><h3>Agor Organic Coffee &amp; Cocoa Body Butter (300g)</h3><p>Coffee and cocoa body butter.</p><div class="product-price">KSh 2,863</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Coffee &amp; Cocoa Body Wash (300ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/cocoabodywash.jpeg" alt="Agor Organic Coffee &amp; Cocoa Body Wash (300ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Body Care</div><h3>Agor Organic Coffee &amp; Cocoa Body Wash (300ml)</h3><p>Coffee and cocoa body wash.</p><div class="product-price">KSh 2,863</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Coffee &amp; Cocoa Butter Body Lotion (300ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/cocoabutterbody.jpeg" alt="Agor Organic Coffee &amp; Cocoa Butter Body Lotion (300ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Body Care</div><h3>Agor Organic Coffee &amp; Cocoa Butter Body Lotion (300ml)</h3><p>Coffee and cocoa body lotion.</p><div class="product-price">KSh 2,863</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Luxury Fragrance"><div class="product-image"><img src="./Nature &amp; Allure new_files/luxuryfragrance.jpeg" alt="Agor Luxury Fragrance" loading="lazy"></div><div class="product-info"><div class="product-category">Body Care</div><h3>Agor Luxury Fragrance</h3><p>Luxury fragrance.</p><div class="product-price">KSh 2,700</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Indian Hemp &amp; Clove Hair"><div class="product-image"><img src="./Nature &amp; Allure new_files/indianhempclovehair.jpeg" alt="Agor Indian Hemp &amp; Clove Hair" loading="lazy"></div><div class="product-info"><div class="product-category">Combo Deals</div><h3>Agor Indian Hemp &amp; Clove Hair</h3><p>Hair care product.</p><div class="product-price">KSh 2,833</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Lavender Soft Exfoliating Feet Mask"><div class="product-image"><img src="./Nature &amp; Allure new_files/feetmask.jpeg" alt="Agor Lavender Soft Exfoliating Feet Mask" loading="lazy"></div><div class="product-info"><div class="product-category">Combo Deals</div><h3>Agor Lavender Soft Exfoliating Feet Mask</h3><p>Feet care product, 7 pairs.</p><div class="product-price">KSh 2,300</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Black Castor Oil Mousse"><div class="product-image"><img src="./Nature &amp; Allure new_files/castoroilmousse.jpeg" alt="Agor Black Castor Oil Mousse" loading="lazy"></div><div class="product-info"><div class="product-category">Hair Care</div><h3>Agor Black Castor Oil Mousse</h3><p>Hair care product.</p><div class="product-price">KSh 2,406</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Lavender Oil"><div class="product-image"><img src="./Nature &amp; Allure new_files/agorlavenderoil.jpeg" alt="Agor Organic Lavender Oil" loading="lazy"></div><div class="product-info"><div class="product-category">Hair Care</div><h3>Agor Organic Lavender Oil</h3><p>Hair and body care oil.</p><div class="product-price">KSh 2,500</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Sweet Almond Oil"><div class="product-image"><img src="./Nature &amp; Allure new_files/sweetalmondoil.jpeg" alt="Agor Organic Sweet Almond Oil" loading="lazy"></div><div class="product-info"><div class="product-category">Body Care</div><h3>Agor Organic Sweet Almond Oil</h3><p>Hair and body care treatment.</p><div class="product-price">KSh 2,400</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Black Jamaican Castor Oil Hair Food (300ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/jamaicancastoroilhairfood.jpeg" alt="Agor Organic Black Jamaican Castor Oil Hair Food (300ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Hair Care</div><h3>Agor Organic Black Jamaican Castor Oil Hair Food (300ml)</h3><p>Hair treatment.</p><div class="product-price">KSh 2,500</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Black Seed Oil &amp; Rosemary Hair Food (300ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/blackseedoilrosemary.jpeg" alt="Agor Organic Black Seed Oil &amp; Rosemary Hair Food (300ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Hair Care</div><h3>Agor Organic Black Seed Oil &amp; Rosemary Hair Food (300ml)</h3><p>Hair treatment.</p><div class="product-price">KSh 2,528</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Hair Detangler (300ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/hairdetanglerorganic.jpeg" alt="Agor Organic Hair Detangler (300ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Hair Care</div><h3>Agor Organic Hair Detangler (300ml)</h3><p>Hair treatment.</p><div class="product-price">KSh 2,600</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Flaxseed Edge Control (100g)"><div class="product-image"><img src="./Nature &amp; Allure new_files/flaxseededgecontrol.jpeg" alt="Agor Organic Flaxseed Edge Control (100g)" loading="lazy"></div><div class="product-info"><div class="product-category">Hair Care</div><h3>Agor Organic Flaxseed Edge Control (100g)</h3><p>Hair styling product.</p><div class="product-price">KSh 2,178</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Blackseed Oil (250ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/blackseedoilagor.jpeg" alt="Agor Organic Blackseed Oil (250ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Hair Care</div><h3>Agor Organic Blackseed Oil (250ml)</h3><p>Hair and body care oil.</p><div class="product-price">KSh 2,500</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Argan Oil (250ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/arganoil.jpeg" alt="Agor Organic Argan Oil (250ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Hair Care</div><h3>Agor Organic Argan Oil (250ml)</h3><p>Hair and body care oil.</p><div class="product-price">KSh 2,500</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Avocado Oil"><div class="product-image"><img src="./Nature &amp; Allure new_files/avocadooil.jpeg" alt="Agor Organic Avocado Oil" loading="lazy"></div><div class="product-info"><div class="product-category">Hair Care</div><h3>Agor Organic Avocado Oil</h3><p>Hair and body care oil.</p><div class="product-price">KSh 2,400</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Hair Oil &amp; Gaba Hair Food (300ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/hairoilgaba.jpeg" alt="Agor Organic Hair Oil &amp; Gaba Hair Food (300ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Hair Care</div><h3>Agor Organic Hair Oil &amp; Gaba Hair Food (300ml)</h3><p>Hair treatment.</p><div class="product-price">KSh 2,450</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Extra Virgin Olive Oil (250ML)"><div class="product-image"><img src="./Nature &amp; Allure new_files/extravirginoil.jpeg" alt="Agor Organic Extra Virgin Olive Oil (250ML)" loading="lazy"></div><div class="product-info"><div class="product-category">Hair Care</div><h3>Agor Organic Extra Virgin Olive Oil (250ML)</h3><p>Hair and body treatment</p><div class="product-price">KSh 2,450</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Pure Organic Aloe Vera Gel (300ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/aloeveraagor.jpeg" alt="Agor Pure Organic Aloe Vera Gel (300ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Skin Care</div><h3>Agor Pure Organic Aloe Vera Gel (300ml)</h3><p>Body, face and skin treatment.</p><div class="product-price">KSh 2,714</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Sesame Seed Oil (250ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/sesameseedoil.jpeg" alt="Agor Organic Sesame Seed Oil (250ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Hair Care</div><h3>Agor Organic Sesame Seed Oil (250ml)</h3><p>Hair and body treatment.</p><div class="product-price">KSh 2,400</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Avocado Oil Hair Food (300ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/organicavocadooil.jpeg" alt="Agor Organic Avocado Oil Hair Food (300ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Hair Care</div><h3>Agor Organic Avocado Oil Hair Food (300ml)</h3><p>Hair treatment.</p><div class="product-price">KSh 2,200</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Virgin Coconut Oil Hair Food (300g)"><div class="product-image"><img src="./Nature &amp; Allure new_files/coconutoil.jpeg" alt="Agor Organic Virgin Coconut Oil Hair Food (300g)" loading="lazy"></div><div class="product-info"><div class="product-category">Hair Care</div><h3>Agor Organic Virgin Coconut Oil Hair Food (300g)</h3><p>Hair treatment.</p><div class="product-price">KSh 2,000</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor All Day Glow Eye Cream (50ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/eyecream50.jpeg" alt="Agor All Day Glow Eye Cream (50ml)" loading="lazy"></div><div class="product-info"><div class="product-category">Eye cream </div><h3>Agor All Day Glow Eye Cream (50ml)</h3><p>hydrates,brightens and reduce puffiness.</p><div class="product-price">KSh 2,500</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Watermelon Brightening Glow Toner (50ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/watermelon50.jpeg" alt="Agor Watermelon Brightening Glow Toner (50ml)" loading="lazy"></div><div class="product-info"><div class="product-category">facial product</div><h3>Agor Watermelon Brightening Glow Toner (50ml)</h3><p>designed to refresh and add luminosity to the skin.</p><div class="product-price">KSh 3,200</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Vitamin C Glow Enzyme Scrub (50ml)"><div class="product-image"><img src="./Nature &amp; Allure new_files/glowenzyme50.jpeg" alt="Agor Vitamin C Glow Enzyme Scrub (50ml)" loading="lazy"></div><div class="product-info"><div class="product-category">face and neck </div><h3>Agor Vitamin C Glow Enzyme Scrub (50ml)</h3><p>designed to buff away dead skin cell and brighten the complexion.</p><div class="product-price">KSh 3,000</div><button>Add to shopping bag</button></div></article><article class="product-card" tabindex="0" role="button" aria-label="View details for Agor Organic Twist Defining Butter(430g)"><div class="product-image"><img src="./Nature &amp; Allure new_files/twistbutter.jpeg" alt="Agor Organic Twist Defining Butter(430g)" loading="lazy"></div><div class="product-info"><div class="product-category">hair product</div><h3>Agor Organic Twist Defining Butter(430g)</h3><p>reduce knots instantly hydrates and mosturizes hair.</p><div class="product-price">KSh 2,697</div><button>Add to shopping bag</button></div></article></div>
+<p class="price-note">All product prices are listed in Kenyan Shillings (KSh). Contact us to confirm availability and delivery charges.</p>
+</div>
+</section>
+
+<section class="services" id="services">
+<div class="section-inner">
+<div class="section-heading">
+<div class="eyebrow">The beauty experience</div>
+<h2>Beauty Services</h2>
+<p>Explore our beauty services and request a consultation. Availability and suitability are confirmed by our team.</p>
+</div>
+<div class="service-grid">
+<article class="service-card">
+<img src="./Nature &amp; Allure new_files/eyebrow.jpeg" alt="Eyebrow beauty service">
+<div>
+<h3>Permanent Eyebrows</h3>
+<p>Discuss microblading and powder brow options during a personalised consultation.</p>
+<button class="btn btn-dark" onclick="bookService('Permanent Eyebrows')">Book service</button>
+</div>
+</article>
+<article class="service-card">
+<img src="./Nature &amp; Allure new_files/eyeliner.jpeg" alt="Eye makeup service">
+<div>
+<h3>Permanent Eyeliner</h3>
+<p>Discuss eyeliner styles, suitability and aftercare before deciding on a treatment.</p>
+<button class="btn btn-dark" onclick="bookService('Permanent Eyeliner')">Book service</button>
+</div>
+</article>
+<article class="service-card">
+<img src="./Nature &amp; Allure new_files/lipcolouring.jpeg" alt="Lip beauty service">
+<div>
+<h3>Permanent Lip Colouring</h3>
+<p>Explore lip blush and semi-permanent lip pigmentation options with our team.</p>
+<button class="btn btn-dark" onclick="bookService('Permanent Lip Colouring')">Book service</button>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<div class="product-modal" id="product-modal" aria-hidden="true" onclick="handleProductModalBackdrop(event)">
+<div class="product-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="product-modal-title">
+<button class="product-modal-close" type="button" onclick="closeProductModal()" aria-label="Close product details">×</button>
+<div class="product-modal-image"><img id="product-modal-img" src="http://127.0.0.1:5500/index.html" alt=""></div>
+<div class="product-modal-content">
+<div class="product-modal-category" id="product-modal-category"></div>
+<h2 id="product-modal-title"></h2>
+<div class="product-modal-price" id="product-modal-price"></div>
+<p class="product-modal-description" id="product-modal-description"></p>
+<p class="product-modal-note">Product information is provided as a general catalogue description. Please contact us to confirm ingredients, suitability, availability and final pricing before ordering.</p>
+<div class="product-modal-quantity">
+<button type="button" onclick="changeProductModalQuantity(-1)">−</button>
+<span id="product-modal-qty">1</span>
+<button type="button" onclick="changeProductModalQuantity(1)">+</button>
+</div>
+<button class="product-modal-add" type="button" onclick="addModalProductToCart()">Add to shopping bag</button>
+</div>
+</div>
+</div>
+
+<div class="overlay" id="overlay" onclick="closeCart()"></div>
+
+<aside class="cart-panel" id="cart-panel" aria-label="Shopping bag" role="dialog">
+<div class="cart-head">
+<h2>Your Shopping Bag</h2>
+<button onclick="closeCart()" aria-label="Close shopping bag">×</button>
+</div>
+<div id="cart-items"><div class="cart-item"><div><div class="cart-product-name">Agor Watermelon Brightening Glow Toner (50ml)</div><span class="cart-product-category">facial product</span><div style="font-size: 11px; margin-top: 7px;">KSh 3,200 each</div><div class="quantity-controls"><button type="button" aria-label="Decrease quantity">−</button><span>2</span><button type="button" aria-label="Increase quantity">+</button></div><button type="button" class="cart-remove">Remove</button></div><strong style="font-size: 12px;">KSh 6,400</strong></div></div>
+<div class="cart-summary">
+<div class="cart-total" id="cart-total">Order total: KSh 6,400</div>
+<p>Product prices are listed in KSh. Delivery charges will be confirmed through WhatsApp before payment.</p>
+<button class="btn" onclick="checkout()">Send order on WhatsApp →</button>
+<button class="cart-clear" onclick="clearCart()">Clear shopping bag</button>
+<button class="btn btn-outline" style="width:100%;margin-top:10px" onclick="closeCart()">Continue shopping</button>
+</div>
+</aside>
+
+<section class="about" id="about">
+<div class="section-inner about-grid">
+<div class="about-image">
+<img loading="lazy" src="./Nature &amp; Allure new_files/allureback.jpeg" alt="Beauty and personal care products">
+</div>
+<div class="about-copy">
+<div class="eyebrow">Our philosophy</div>
+<h2>Nature's Care.<br>Your Beauty.</h2>
+<p>Nature &amp; Allure brings together beauty, care and elegance. Discover hair, face and body care essentials from our selected AGOR product catalogue.</p>
+<p><strong>Our Core Values</strong><br>AGOR states that its products are made with organic ingredients sourced ethically from East Africa and West Africa, and manufactured in the UK under GMP safety standards.</p>
+<p>We want to help you find products that fit your routine. Contact our team for product details, availability, pricing and delivery arrangements in Kenya.</p>
+<a href="http://127.0.0.1:5500/index.html#shop" class="btn">Discover the collection</a>
+</div>
+</div>
+</section>
+
+<section class="booking" id="booking">
+<div class="section-inner">
+<div class="section-heading">
+<div class="eyebrow">Let's get in touch</div>
+<h2>Request an Appointment</h2>
+<p>Send your consultation request directly to our WhatsApp.</p>
+</div>
+<div class="booking-wrap">
+<h3>Book a Service</h3>
+<p>Complete the form. Our team will contact you to confirm availability and discuss your request.</p>
+<form id="booking-form">
+<div class="form-grid">
+<div class="form-group">
+<label for="customer-name">Your name</label>
+<input id="customer-name" required="" autocomplete="name" placeholder="Full name">
+</div>
+<div class="form-group">
+<label for="customer-phone">Phone number</label>
+<input id="customer-phone" required="" type="tel" autocomplete="tel" placeholder="Your phone number">
+</div>
+<div class="form-group">
+<label for="service-choice">Service</label>
+<select id="service-choice" required="">
+<option value="">Choose a service</option>
+<option>Permanent Eyebrows</option>
+<option>Permanent Eyeliner</option>
+<option>Permanent Lip Colouring</option>
+</select>
+</div>
+<div class="form-group">
+<label for="booking-date">Preferred date</label>
+<input id="booking-date" type="date" required="" min="2026-11-11">
+</div>
+<div class="form-group full">
+<label for="booking-notes">Additional information</label>
+<textarea id="booking-notes" placeholder="Tell us anything else we should know..."></textarea>
+</div>
+</div>
+<button class="btn form-submit" type="submit">Send booking request on WhatsApp →</button>
+</form>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="section-inner contact-grid">
+<div>
+<div class="eyebrow">We're here to help</div>
+<h2>Let's Talk Beauty.</h2>
+<p>Questions about a product, an order or a beauty service? Contact our team directly through WhatsApp.</p>
+<p style="margin-top:20px">Phone / WhatsApp<br><a href="https://wa.me/254113296359">+254 113 296 359</a></p>
+<p style="margin-top:15px">Official AGOR website<br><a href="https://agorbody.co.uk/" target="_blank" rel="noopener">agorbody.co.uk</a></p>
+</div>
+<div>
+<div class="eyebrow">Nature &amp; Allure</div>
+<h2>Beauty.<br>Care. Elegance.</h2>
+<p>Browse our collection and send us your order. We'll help confirm availability, pricing and delivery.</p>
+<div class="location-card">
+<h3>Visit Us</h3>
+<p><strong>Location:</strong> JK Business Center, Jamhuri, Nairobi</p>
+<p><strong>Landmark:</strong> Opposite Harmony Court / Coca-Cola.</p>
+<a class="location-directions" href="https://www.google.com/maps/search/?api=1&amp;query=JK+Business+Center%2C+Jamhuri%2C+Nairobi" target="_blank" rel="noopener">Get directions on Google Maps ↗️</a>
+<iframe class="location-map" src="./Nature &amp; Allure new_files/maps.html" title="Map showing JK Business Center, Jamhuri, Nairobi" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen=""></iframe>
+</div>
+<a class="btn" style="margin-top:25px" href="https://wa.me/254113296359?text=Hello%20Nature%20%26%20Allure%2C%20I%20would%20like%20to%20make%20an%20enquiry.">Contact us →</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<a class="whatsapp" href="https://wa.me/254113296359?text=Hello%20Nature%20%26%20Allure%2C%20I%20need%20some%20information." target="_blank" rel="noopener">WhatsApp Us ↗️</a>
+
+<footer>
+<div class="logo" style="justify-content:center">
+<img src="./Nature &amp; Allure new_files/agor-logo.jpeg" alt="Nature &amp; Allure logo">
+<span class="logo-text">NATURE &amp; ALLURE<small>BEAUTY · CARE · ELEGANCE</small></span>
+</div>
+<p>Natural Beauty. Elegantly You.</p>
+<p>©️ <span id="year">2026</span> Nature &amp; Allure. All rights reserved.</p>
+</footer>
+
+<script>
+"use strict";
+
+const WHATSAPP_NUMBER = "254113296359";
+
+const products = [
+
+/* PRODUCTS 1–24 */
+
+{name:"Agor 100% Organic Hair Oil (250ml)",cat:"Hair Care",desc:"Organic hair oil for your hair care routine.",price:2500,image:"agorhairoil.jpeg"},
+{name:"Agor Organic Hair Shampoo (500ml)",cat:"Hair Care",desc:"Hair cleansing essential.",price:2922,image:"organicshampoo.jpeg"},
+{name:"Agor Organic Hair Conditioner (500ml)",cat:"Hair Care",desc:"Conditioning care for your hair.",price:2922,image:"organicconditioner.jpeg"},
+{name:"Agor Organic Leave-In Conditioner (430g)",cat:"Hair Care",desc:"Leave-in hair care.",price:2794,image:"leaveinconditioner.jpeg"},
+{name:"Agor Organic Deep Treatment Cocktail Hair Mask (430g)",cat:"Hair Care",desc:"A deep treatment hair mask.",price:2818,image:"coctail430.jpeg"},
+{name:"Agor Organic Curling Custard (300ml)",cat:"Hair Care",desc:"Styling care for curls.",price:2600,image:"curlingcustard300.jpeg"},
+{name:"Agor Organic Flaxseed Styling Gel (300ml)",cat:"Hair Care",desc:"Hair styling gel.",price:2500,image:"flaxseed300.jpeg"},
+{name:"Agor Organic Black Jamaican Castor Oil (250ml)",cat:"Hair Care",desc:"Black Jamaican castor oil.",price:2500,image:"blackjamaican250.jpeg"},
+{name:"Agor Organic Rosemary Oil For Hair & Skin (250ml)",cat:"Hair Care",desc:"Rosemary oil for hair and skin.",price:2673,image:"rosemaryoil250.jpeg"},
+{name:"Agor Hyaluronic Smoothing Cleanser (100ml)",cat:"Skin Care",desc:"Facial cleansing essential.",price:3100,image:"clenser100.jpeg"},
+{name:"Agor Vitamin C Brightening Serum (50ml)",cat:"Skin Care",desc:"Vitamin C facial serum.",price:3500,image:"brighteningserum50.jpeg"},
+{name:"Agor Day & Night Deep Moisturising Cream (50ml)",cat:"Skin Care",desc:"Daily moisturising cream.",price:2500,image:"dayandnight50.jpeg"},
+{name:"Agor SPF 50+ Sun Cream (50ml)",cat:"Skin Care",desc:"Sun protection cream.",price:3200,image:"suncream50.jpeg"},
+{name:"Agor Retinol Serum (50ml)",cat:"Skin Care",desc:"Retinol facial serum.",price:3500,image:"retinalserum50.jpeg"},
+{name:"Agor Natural Dead Sea Mud Mask (250g)",cat:"Skin Care",desc:"Dead Sea mud mask.",price:2500,image:"mudmask.jpeg"},
+{name:"Agor Charcoal Peel-Off Black Mask (60ml)",cat:"Skin Care",desc:"Charcoal facial mask.",price:2100,image:"chacoalpeel.jpeg"},
+{name:"Agor Shea Butter Body Hand & Feet Scrub (300g)",cat:"Body Care",desc:"Shea butter scrub for body, hands and feet.",price:1564,image:"sheabutter.jpeg"},
+{name:"Agor Organic Coffee & Cocoa Body Oil (250ml)",cat:"Body Care",desc:"Coffee and cocoa body oil.",price:2863,image:"cocoabodyoil.jpeg"},
+{name:"Agor Organic Coffee & Cocoa Body Butter (300g)",cat:"Body Care",desc:"Coffee and cocoa body butter.",price:2863,image:"cocoabodybutter.jpeg"},
+{name:"Agor Organic Coffee & Cocoa Body Wash (300ml)",cat:"Body Care",desc:"Coffee and cocoa body wash.",price:2863,image:"cocoabodywash.jpeg"},
+{name:"Agor Organic Coffee & Cocoa Butter Body Lotion (300ml)",cat:"Body Care",desc:"Coffee and cocoa body lotion.",price:2863,image:"cocoabutterbody.jpeg"},
+{name:"Agor Luxury Fragrance",cat:"Body Care",desc:"Luxury fragrance.",price:2700,image:"luxuryfragrance.jpeg"},
+{name:"Agor Indian Hemp & Clove Hair",cat:"Combo Deals",desc:"Hair care product.",price:2833,image:"indianhempclovehair.jpeg"},
+{name:"Agor Lavender Soft Exfoliating Feet Mask",cat:"Combo Deals",desc:"Feet care product, 7 pairs.",price:2300,image:"feetmask.jpeg"},
+
+/* PRODUCTS 25–35 */
+
+{name:"Agor Black Castor Oil Mousse",cat:"Hair Care",desc:"Hair care product.",price:2406,image:"castoroilmousse.jpeg",active:true},
+{name:"Agor Organic Lavender Oil",cat:"Hair Care",desc:"Hair and body care oil.",price:2500,image:"agorlavenderoil.jpeg",active:true},
+{name:"Agor Organic Sweet Almond Oil",cat:"Body Care",desc:"Hair and body care treatment.",price:2400,image:"sweetalmondoil.jpeg",active:true},
+{name:"Agor Organic Black Jamaican Castor Oil Hair Food (300ml)",cat:"Hair Care",desc:"Hair treatment.",price:2500,image:"jamaicancastoroilhairfood.jpeg",active:true},
+{name:"Agor Organic Black Seed Oil & Rosemary Hair Food (300ml)",cat:"Hair Care",desc:"Hair treatment.",price:2528,image:"blackseedoilrosemary.jpeg",active:true},
+{name:"Agor Organic Hair Detangler (300ml)",cat:"Hair Care",desc:"Hair treatment.",price:2600,image:"hairdetanglerorganic.jpeg",active:true},
+{name:"Agor Organic Flaxseed Edge Control (100g)",cat:"Hair Care",desc:"Hair styling product.",price:2178,image:"flaxseededgecontrol.jpeg",active:true},
+{name:"Agor Organic Blackseed Oil (250ml)",cat:"Hair Care",desc:"Hair and body care oil.",price:2500,image:"blackseedoilagor.jpeg",active:true},
+{name:"Agor Organic Argan Oil (250ml)",cat:"Hair Care",desc:"Hair and body care oil.",price:2500,image:"arganoil.jpeg",active:true},
+{name:"Agor Organic Avocado Oil",cat:"Hair Care",desc:"Hair and body care oil.",price:2400,image:"avocadooil.jpeg",active:true},
+{name:"Agor Organic Hair Oil & Gaba Hair Food (300ml)",cat:"Hair Care",desc:"Hair treatment.",price:2450,image:"hairoilgaba.jpeg",active:true},
+
+/* PRODUCTS 36–40 */
+
+{name:"Agor Organic Extra Virgin Olive Oil (250ML)",cat:"Hair Care",desc:"Hair and body treatment",price:2450,image:"extravirginoil.jpeg",active:true},
+{name:"Agor Pure Organic Aloe Vera Gel (300ml)",cat:"Skin Care",desc:"Body, face and skin treatment.",price:2714,image:"aloeveraagor.jpeg",active:true},
+{name:"Agor Organic Sesame Seed Oil (250ml)",cat:"Hair Care",desc:"Hair and body treatment.",price:2400,image:"sesameseedoil.jpeg",active:true},
+{name:"Agor Organic Avocado Oil Hair Food (300ml)",cat:"Hair Care",desc:"Hair treatment.",price:2200,image:"organicavocadooil.jpeg",active:true},
+{name:"Agor Organic Virgin Coconut Oil Hair Food (300g)",cat:"Hair Care",desc:"Hair treatment.",price:2000,image:"coconutoil.jpeg",active:true},
+
+/* NEW PRODUCT SLOTS 41–44
+   Edit these details when adding your new products.
+   Change active:false to active:true to display each product. */
+
+{name:"Agor All Day Glow Eye Cream (50ml)",cat:"Eye cream ",desc:"hydrates,brightens and reduce puffiness.",price:2500,image:"eyecream50.jpeg",active:true},
+
+{name:"Agor Watermelon Brightening Glow Toner (50ml)",cat:"facial product",desc:"designed to refresh and add luminosity to the skin.",price:3200,image:"watermelon50.jpeg",active:true},
+
+{name:"Agor Vitamin C Glow Enzyme Scrub (50ml)",cat:"face and neck ",desc:"designed to buff away dead skin cell and brighten the complexion.",price:3000,image:"glowenzyme50.jpeg",active:true},
+
+{name:"Agor Organic Twist Defining Butter(430g)",cat:"hair product",desc:"reduce knots instantly hydrates and mosturizes hair.",price:2697,image:"twistbutter.jpeg",active:true}
+
+];
+
+/* PRICE FUNCTIONS */
+
+function priceKES(product){
+return Number(product.price || 0);
+}
+
+function formatKES(amount){
+return "KSh " + amount.toLocaleString("en-KE");
+}
+
+/* WEBSITE STATE */
+
+let selectedCategory = "All";
+let cart = [];
+let activeProductIndex = null;
+let productModalQuantity = 1;
+
+/* LOAD SAVED CART */
+
+try{
+const saved = JSON.parse(localStorage.getItem("agorKenyaCart") || "[]");
+
+if(Array.isArray(saved)){
+cart = saved.filter(item =>
+Number.isInteger(item.index) &&
+item.index >= 0 &&
+item.index < products.length &&
+products[item.index].active !== false &&
+Number.isInteger(item.qty) &&
+item.qty > 0 &&
+item.qty <= 999
+);
+}
+}catch(error){
+cart = [];
+}
+
+/* PRODUCT IMAGE */
+
+function getProductImage(product){
+return product.image || "";
+}
+
+/* DISPLAY PRODUCTS */
+
+function renderProducts(){
+
+const grid = document.getElementById("product-grid");
+const searchInput = document.getElementById("search");
+const term = searchInput.value.trim().toLowerCase();
+
+const filtered = products.filter(product =>
+product.active !== false &&
+(selectedCategory === "All" || product.cat === selectedCategory) &&
+(
+product.name.toLowerCase().includes(term) ||
+product.desc.toLowerCase().includes(term)
+)
+);
+
+grid.innerHTML = "";
+
+if(!filtered.length){
+grid.innerHTML = '<div class="empty">No products found. Try another search.</div>';
+return;
+}
+
+filtered.forEach(product => {
+
+const index = products.indexOf(product);
+
+const card = document.createElement("article");
+card.className = "product-card";
+card.tabIndex = 0;
+card.setAttribute("role","button");
+card.setAttribute("aria-label","View details for " + product.name);
+
+card.addEventListener("click",() => openProductModal(index));
+
+card.addEventListener("keydown",event => {
+if(event.target === card && (event.key === "Enter" || event.key === " ")){
+event.preventDefault();
+openProductModal(index);
+}
+});
+
+const imageBox = document.createElement("div");
+imageBox.className = "product-image";
+
+const image = document.createElement("img");
+image.src = getProductImage(product);
+image.alt = product.name;
+image.loading = "lazy";
+
+image.onerror = function(){
+this.onerror = null;
+this.src = "https://placehold.co/700x700/f0eadc/18351f?text=" + encodeURIComponent(product.name);
+};
+
+imageBox.appendChild(image);
+
+const info = document.createElement("div");
+info.className = "product-info";
+
+const category = document.createElement("div");
+category.className = "product-category";
+category.textContent = product.cat;
+
+const name = document.createElement("h3");
+name.textContent = product.name;
+
+const description = document.createElement("p");
+description.textContent = product.desc;
+
+const price = document.createElement("div");
+price.className = "product-price";
+price.textContent = formatKES(priceKES(product));
+
+const button = document.createElement("button");
+button.textContent = "Add to shopping bag";
+
+button.onclick = event => {
+event.stopPropagation();
+addToCart(index);
+};
+
+info.append(category,name,description,price,button);
+card.append(imageBox,info);
+grid.appendChild(card);
+
+});
+
+}
+
+/* PRODUCT DETAILS POPUP */
+
+function openProductModal(index){
+
+const product = products[index];
+if(!product || product.active === false)return;
+
+activeProductIndex = index;
+productModalQuantity = 1;
+
+const modal = document.getElementById("product-modal");
+const image = document.getElementById("product-modal-img");
+
+image.src = getProductImage(product);
+image.alt = product.name;
+
+image.onerror = function(){
+this.onerror = null;
+this.src = "https://placehold.co/900x900/f0eadc/18351f?text=" + encodeURIComponent(product.name);
+};
+
+document.getElementById("product-modal-category").textContent = product.cat;
+document.getElementById("product-modal-title").textContent = product.name;
+document.getElementById("product-modal-price").textContent = formatKES(priceKES(product));
+document.getElementById("product-modal-description").textContent = product.desc;
+document.getElementById("product-modal-qty").textContent = productModalQuantity;
+
+modal.classList.add("show");
+modal.setAttribute("aria-hidden","false");
+document.body.style.overflow = "hidden";
+
+}
+
+function closeProductModal(){
+
+const modal = document.getElementById("product-modal");
+
+modal.classList.remove("show");
+modal.setAttribute("aria-hidden","true");
+document.body.style.overflow = "";
+activeProductIndex = null;
+
+}
+
+function handleProductModalBackdrop(event){
+if(event.target.id === "product-modal"){
+closeProductModal();
+}
+}
+
+function changeProductModalQuantity(amount){
+
+productModalQuantity = Math.max(
+1,
+Math.min(999,productModalQuantity + amount)
+);
+
+document.getElementById("product-modal-qty").textContent = productModalQuantity;
+
+}
+
+function addModalProductToCart(){
+
+if(activeProductIndex === null)return;
+
+const existing = cart.find(item => item.index === activeProductIndex);
+
+if(existing){
+existing.qty = Math.min(999,existing.qty + productModalQuantity);
+}else{
+cart.push({index:activeProductIndex,qty:productModalQuantity});
+}
+
+updateCart();
+closeProductModal();
+openCart();
+
+}
+
+/* CLOSE POPUPS WITH ESCAPE */
+
+document.addEventListener("keydown",event => {
+
+if(event.key === "Escape"){
+closeProductModal();
+closeCart();
+}
+
+});
+
+/* CATEGORY FILTERS */
+
+function setCategory(category){
+
+selectedCategory = category;
+
+document.querySelectorAll(".filter-btn").forEach(button => {
+button.classList.toggle(
+"active",
+button.textContent.trim() === category
+);
+});
+
+renderProducts();
+
+}
+
+function focusSearch(){
+
+document.getElementById("search").focus();
+document.getElementById("shop").scrollIntoView({behavior:"smooth"});
+
+}
+
+function toggleMenu(){
+
+document.getElementById("navlinks").classList.toggle("show");
+
+}
+
+/* SHOPPING BAG */
+
+function saveCart(){
+
+try{
+localStorage.setItem("agorKenyaCart",JSON.stringify(cart));
+}catch(error){
+console.warn("Cart could not be saved.",error);
+}
+
+}
+
+function addToCart(index){
+
+const product = products[index];
+
+if(!product || product.active === false)return;
+
+const existing = cart.find(item => item.index === index);
+
+if(existing){
+
+if(existing.qty >= 999){
+alert("Maximum quantity reached.");
+return;
+}
+
+existing.qty++;
+
+}else{
+
+cart.push({index:index,qty:1});
+
+}
+
+updateCart();
+openCart();
+
+}
+
+function changeQuantity(index,amount){
+
+const item = cart.find(item => item.index === index);
+
+if(!item)return;
+
+item.qty += amount;
+
+if(item.qty <= 0){
+cart = cart.filter(item => item.index !== index);
+}
+
+updateCart();
+
+}
+
+function removeFromCart(index){
+
+cart = cart.filter(item => item.index !== index);
+updateCart();
+
+}
+
+function clearCart(){
+
+if(!cart.length)return;
+
+if(confirm("Clear all products from your shopping bag?")){
+cart = [];
+updateCart();
+}
+
+}
+
+/* UPDATE SHOPPING BAG */
+
+function updateCart(){
+
+saveCart();
+
+const count = cart.reduce((sum,item) => sum + item.qty,0);
+
+document.getElementById("cart-count").textContent = count;
+
+const items = document.getElementById("cart-items");
+const total = document.getElementById("cart-total");
+
+items.innerHTML = "";
+
+if(!cart.length){
+
+items.innerHTML = '<div class="cart-empty"><h3>Your bag is empty</h3><p>Discover your favourite beauty essentials and add them to your shopping bag.</p></div>';
+
+total.textContent = "";
+
+return;
+
+}
+
+let subtotal = 0;
+
+cart.forEach(item => {
+
+const product = products[item.index];
+
+if(!product)return;
+
+const lineTotal = priceKES(product) * item.qty;
+subtotal += lineTotal;
+
+const row = document.createElement("div");
+row.className = "cart-item";
+
+const details = document.createElement("div");
+
+const name = document.createElement("div");
+name.className = "cart-product-name";
+name.textContent = product.name;
+
+const category = document.createElement("span");
+category.className = "cart-product-category";
+category.textContent = product.cat;
+
+const unitPrice = document.createElement("div");
+unitPrice.style.fontSize = "11px";
+unitPrice.style.marginTop = "7px";
+unitPrice.textContent = formatKES(priceKES(product)) + " each";
+
+const controls = document.createElement("div");
+controls.className = "quantity-controls";
+
+const minus = document.createElement("button");
+minus.type = "button";
+minus.textContent = "−";
+minus.setAttribute("aria-label","Decrease quantity");
+minus.onclick = () => changeQuantity(item.index,-1);
+
+const quantity = document.createElement("span");
+quantity.textContent = item.qty;
+
+const plus = document.createElement("button");
+plus.type = "button";
+plus.textContent = "+";
+plus.setAttribute("aria-label","Increase quantity");
+plus.onclick = () => changeQuantity(item.index,1);
+
+controls.append(minus,quantity,plus);
+
+const remove = document.createElement("button");
+remove.type = "button";
+remove.className = "cart-remove";
+remove.textContent = "Remove";
+remove.onclick = () => removeFromCart(item.index);
+
+details.append(name,category,unitPrice,controls,remove);
+
+const linePrice = document.createElement("strong");
+linePrice.style.fontSize = "12px";
+linePrice.textContent = formatKES(lineTotal);
+
+row.append(details,linePrice);
+items.appendChild(row);
+
+});
+
+total.textContent = "Order total: " + formatKES(subtotal);
+
+}
+
+function openCart(){
+
+document.getElementById("cart-panel").classList.add("open");
+document.getElementById("overlay").classList.add("show");
+
+}
+
+function closeCart(){
+
+document.getElementById("cart-panel").classList.remove("open");
+document.getElementById("overlay").classList.remove("show");
+
+}
+
+/* WHATSAPP CHECKOUT */
+
+function checkout(){
+
+if(!cart.length){
+alert("Your shopping bag is empty.");
+return;
+}
+
+const lines = cart.map(item => {
+
+const product = products[item.index];
+
+return "• " + product.name + " × " + item.qty +
+" — " + formatKES(priceKES(product) * item.qty);
+
+});
+
+const subtotal = cart.reduce(
+(sum,item) => sum + priceKES(products[item.index]) * item.qty,
+0
+);
+
+const message =
+"Hello Nature & Allure, I would like to place an order.\n\n" +
+lines.join("\n") +
+"\n\nOrder total: " + formatKES(subtotal) +
+"\n\nPlease confirm availability, delivery charges and payment instructions.";
+
+const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+
+const newWindow = window.open(url,"_blank");
+
+if(!newWindow){
+window.location.href = url;
+}
+
+}
+
+/* SERVICE BOOKING */
+
+function bookService(service){
+
+document.getElementById("service-choice").value = service;
+document.getElementById("booking").scrollIntoView({behavior:"smooth"});
+
+}
+
+document.getElementById("booking-form").addEventListener("submit",function(event){
+
+event.preventDefault();
+
+const name = document.getElementById("customer-name").value.trim();
+const phone = document.getElementById("customer-phone").value.trim();
+const service = document.getElementById("service-choice").value;
+const date = document.getElementById("booking-date").value;
+const notes = document.getElementById("booking-notes").value.trim();
+
+const message =
+"Hello Nature & Allure, I would like to request a service.\n\n" +
+"Name: " + name +
+"\nPhone: " + phone +
+"\nService: " + service +
+"\nPreferred date: " + date +
+"\nAdditional information: " + (notes || "None") +
+"\n\nPlease confirm availability and details.";
+
+const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+
+const newWindow = window.open(url,"_blank");
+
+if(!newWindow){
+window.location.href = url;
+}
+
+});
+
+/* INITIALISE WEBSITE */
+
+const bookingDate = document.getElementById("booking-date");
+const today = new Date();
+
+bookingDate.min = [
+today.getFullYear(),
+String(today.getMonth()+1).padStart(2,"0"),
+String(today.getDate()).padStart(2,"0")
+].join("-");
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+renderProducts();
+updateCart();
+
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
